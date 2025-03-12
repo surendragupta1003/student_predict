@@ -22,7 +22,7 @@ except Exception as e:
 # Load model, scaler, and label encoder
 @st.cache_resource
 def load_model():
-    with open(r'C:\Users\suren\Desktop\FSDS_Tutorial\ML\student_per_app\student_final_linear_model.pkl', 'rb') as file:
+    with open('student_final_linear_model.pkl', 'rb') as file:
         model, scaler, le = pickle.load(file)
     return model, scaler, le
 
